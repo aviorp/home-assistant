@@ -1,0 +1,40 @@
+{
+  "name": "avior-home",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "git-update": "git add . && git commit -am \"${MSG:-update}\" && git push",
+
+    "dc-stop-all": "docker-compose -f docker-compose.yml down",
+    "dc-start": "docker-compose -f docker-compose.yml up -d $CONTAINER_NAME",
+    "dc-remove": "docker-compose -f docker-compose.yml rm -f -s -v $CONTAINER_NAME",
+    "dc-restart": "docker-compose -f docker-compose.yml restart -t 0 $CONTAINER_NAME",
+    "dc-logs": "docker-compose -f docker-compose.yml logs -t $CONTAINER_NAME",
+    "dc-logs-follow": "docker-compose -f docker-compose.yml logs -tf $CONTAINER_NAME",
+
+    "ha-start": "CONTAINER_NAME=homeassistant npm run dc-start",
+    "ha-stop": "CONTAINER_NAME=homeassistant npm run dc-remove",
+    "ha-restart": "CONTAINER_NAME=homeassistant npm run dc-restart",
+    "ha-logs": "CONTAINER_NAME=homeassistant npm run dc-logs",
+
+    "ag-start": "CONTAINER_NAME=adguardhome npm run dc-start",
+    "ag-stop": "CONTAINER_NAME=adguardhome npm run dc-remove",
+    "ag-restart": "CONTAINER_NAME=adguardhome npm run dc-restart",
+    "ag-logs": "CONTAINER_NAME=adguardhome npm run dc-logs",
+
+    "hab-apply-docker-compose-config": "CONTAINER_NAME=openHAB npm run hab-stop && npm run hab-start",
+    "hab-start": "CONTAINER_NAME=openHAB npm run dc-start",
+    "hab-stop": "CONTAINER_NAME=openHAB npm run dc-remove",
+    "hab-restart": "CONTAINER_NAME=openHAB npm run dc-restart",
+    "hab-logs": "CONTAINER_NAME=openHAB npm run dc-logs",
+    "hab-logs-follow": "CONTAINER_NAME=openHAB npm run dc-logs-follow"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "yamljs": "^0.3.0"
+  }
+}

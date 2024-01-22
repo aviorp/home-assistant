@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "avior_peretz",
+        "name": "Avior Peretz",
+        "user_id": "4ed92255abc744759c9cddd4165b532f",
+        "device_trackers": []
+      }
+    ]
+  }
+}

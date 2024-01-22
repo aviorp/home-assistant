@@ -1,0 +1,97 @@
+version: "2.2"
+
+services:
+  #####################
+  ## Ad guard home ##
+  #####################
+  # details https://www.llewellynhughes.co.uk/post/installing-adguard-compose/
+  # regarding port 53 https://kifarunix.com/configure-local-dns-server-using-dnsmasq-on-ubuntu-20-04/
+  adguardhome:
+    image: adguard/adguardhome
+    container_name: adguardhome
+    restart: always
+    ports:
+      - 53:53/tcp
+      - 53:53/udp
+      - 784:784/udp
+      - 853:853/tcp
+      - 3000:3000/tcp
+      - 83:80/tcp
+    volumes:
+      - ./adguard/work:/opt/adguardhome/work
+      - ./adguard/conf:/opt/adguardhome/conf
+
+  #####################
+  ## openHAB service ##
+  #####################
+  openHAB:
+    restart: always
+    network_mode: host
+    container_name: openHAB
+    image: "openhab/openhab:2.5.3"
+    environment:
+      USER_ID: 1000
+      GROUP_ID: 1000
+      OPENHAB_HTTP_PORT: 8321
+      OPENHAB_HTTPS_PORT: 8443
+      EXTRA_JAVA_OPTS: "-Duser.timezone=Asia/Jerusalem"
+      CRYPTO_POLICY: unlimited
+    ports:
+      - "8321:8321" # openhab http
+      - "8443:8443" # openhab https
+      - "8101:8101" # [need it?] openhab console (might to use it with vscode extension) https://www.openhab.org/docs/administration/console.html
+      - "5007:5007" # LSP: language server protocol
+      - "9124:9124" # homebridge
+      - "4321:4321" # gateway scan # open gateway service's ports
+      - "9898:9898" # gateway scan # https://community.home-assistant.io/t/cannot-connect-xiaomi-gateway-lumi-gateway-v3-to-ha/65720/47
+      - "1982:1982" # yeelight discover https://www.yeelight.com/download/Yeelight_Inter-Operation_Spec.pdf
+      - "1900:1900" # SSDP protocol (discover all)
+    volumes:
+      - "/etc/localtime:/etc/localtime:ro"
+      - "/etc/timezone:/etc/timezone:ro"
+      - "./openhab/addons:/openhab/addons"
+      - "./openhab/conf:/openhab/conf"
+      - "./openhab/userdata:/openhab/userdata"
+
+  ############################
+  ## home-assistant service ##
+  ############################
+  homeassistant:
+    restart: always
+    # network_mode: host
+    container_name: home-assistant
+    # https://hub.docker.com/r/homeassistant/raspberrypi3-homeassistant/tags
+    # image: homeassistant/raspberrypi3-homeassistant:stable # PI
+    image: homeassistant/home-assistant:stable # desktop
+    environment:
+      # This is the required way to set a timezone on macOS and differs from the Linux compose file
+      - TZ=Asia/Jerusalem
+    volumes:
+      - ./home-assistant/config:/config
+    ports:
+      # Also required for macOS since the network directive in docker-compose does not work
+      - "8123:8123"
+      - "5007:5007" # LSP: language server protocol
+      - "9124:9124" # homebridge
+      - "4321:4321" # gateway scan # open gateway service's ports
+      - "9898:9898" # gateway scan # https://community.home-assistant.io/t/cannot-connect-xiaomi-gateway-lumi-gateway-v3-to-ha/65720/47
+      - "1982:1982" # yeelight discover https://www.yeelight.com/download/Yeelight_Inter-Operation_Spec.pdf
+      - "1900:1900" # SSDP protocol (discover all)
+      - "51827:51827" # ha homekit
+      - "10002:10002" # switcher 
+      - "20002:20002" # switcher
+      - "20003:20003" # switcher
+  zeroconf:
+    restart: always
+    network_mode: host
+    container_name: zeroconf
+    image: homeassistant/armhf-hassio-dns:1
+    environment:
+      - TZ=Asia/Jerusalem
+    volumes:
+      - ./home-assistant/config:/config
+    ports:
+      - "51827:51827" # ha homekit
+# Add this or docker-compose will complain that it did not find the key for locally mapped volume
+volumes:
+  config:

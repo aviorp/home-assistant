@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "minor_version": 3,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "name": "סלון",
+        "id": "slvn",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "מטבח",
+        "id": "mtbkh",
+        "picture": null
+      },
+      {
+        "aliases": [],
+        "name": "חדר שינה",
+        "id": "khdr_shynh",
+        "picture": null
+      }
+    ]
+  }
+}
