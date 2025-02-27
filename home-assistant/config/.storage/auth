@@ -66,6 +66,7 @@
         "jwt_key": "bee9cdc91cc3f82ac9bd1164475a97054f8fc8fceb9dc1017f5a14a1d4ba32f4353f476ad4d31701986517648b0521101456a4452ffa70d7c4fe560ba49cbd6b",
         "last_used_at": null,
         "last_used_ip": null,
+        "expire_at": null,
         "credential_id": null,
         "version": "2023.12.4"
       },
@@ -82,6 +83,7 @@
         "jwt_key": "1512a2b62438b037024e6f60fd93d452b8502260fba5214cd53df7f68a8cf4d884529c20aab6dc1ae37cafc387db037e2394b6acc5d414e2aa46bd7f85ad5298",
         "last_used_at": "2024-01-01T00:36:43.961754+00:00",
         "last_used_ip": "192.168.65.1",
+        "expire_at": null,
         "credential_id": "a89e491ef35048f090be0d8f22f16314",
         "version": "2023.12.4"
       },
@@ -98,8 +100,26 @@
         "jwt_key": "145e5e329c747ac1e83a67e7fefb21098a85d1b09b697b3cf262dc5291b02f91739a73fc1b81fcfada4883711d3fd6925697f78df7ab3a259250f96a5d5769d7",
         "last_used_at": "2024-01-03T22:44:46.375273+00:00",
         "last_used_ip": "192.168.65.1",
+        "expire_at": null,
         "credential_id": "a89e491ef35048f090be0d8f22f16314",
         "version": "2023.12.4"
+      },
+      {
+        "id": "1208623e476e40ebad7adaf5ee1d2f92",
+        "user_id": "4ed92255abc744759c9cddd4165b532f",
+        "client_id": "http://localhost:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-02-27T17:18:33.323105+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "654ddfb32a2f67e1d204713cb795ff7306866951580e603b25ebc273109ca961ffbb7aa15c38040c1c3ac36cd87b54281e4e55ff1b498b012f28cd699838f7ab",
+        "jwt_key": "cb8463a519c0e3bd8a2c3854edd0c2f0306d39e12d2f04d21c7b31086a90e615d2d3b27c6d97f1090edd4d87d180d89abc3dcb67c4d4497fa9755d729023ff9c",
+        "last_used_at": "2025-02-27T17:18:33.324664+00:00",
+        "last_used_ip": "192.168.65.1",
+        "expire_at": 1748452713.324664,
+        "credential_id": "a89e491ef35048f090be0d8f22f16314",
+        "version": "2025.2.5"
       }
     ]
   }

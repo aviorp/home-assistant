@@ -1,79 +1,17 @@
 {
   "version": 1,
-  "minor_version": 1,
+  "minor_version": 4,
   "key": "core.config_entries",
   "data": {
     "entries": [
-      {
-        "entry_id": "36f5bc796fd6ec9698f7e81c2beb5e0c",
-        "version": 1,
-        "domain": "sun",
-        "title": "Sun",
-        "data": {},
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "import",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "567e5a9e5bc0e51105c83708b6d16d04",
-        "version": 1,
-        "domain": "shopping_list",
-        "title": "Shopping list",
-        "data": {},
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": "shopping_list",
-        "disabled_by": null
-      },
-      {
-        "entry_id": "785a3a983b1b0c72d130d64f61d5b77e",
-        "version": 1,
-        "domain": "met",
-        "title": "Home",
-        "data": {
-          "track_home": true
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "d4f70a48f4e7745c14723a98409b5d79",
-        "version": 1,
-        "domain": "radio_browser",
-        "title": "Radio Browser",
-        "data": {},
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "80d0d80bc234821217c316ae2554490d",
-        "version": 1,
-        "domain": "google_translate",
-        "title": "Google Translate text-to-speech",
-        "data": {
-          "language": "en",
-          "tld": "com"
-        },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": null,
-        "disabled_by": null
-      }
+      {"created_at":"1970-01-01T00:00:00+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"sun","entry_id":"36f5bc796fd6ec9698f7e81c2beb5e0c","minor_version":1,"modified_at":"1970-01-01T00:00:00+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"import","title":"Sun","unique_id":null,"version":1},
+      {"created_at":"1970-01-01T00:00:00+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"shopping_list","entry_id":"567e5a9e5bc0e51105c83708b6d16d04","minor_version":1,"modified_at":"1970-01-01T00:00:00+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Shopping list","unique_id":"shopping_list","version":1},
+      {"created_at":"1970-01-01T00:00:00+00:00","data":{"track_home":true},"disabled_by":null,"discovery_keys":{},"domain":"met","entry_id":"785a3a983b1b0c72d130d64f61d5b77e","minor_version":1,"modified_at":"1970-01-01T00:00:00+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Home","unique_id":null,"version":1},
+      {"created_at":"1970-01-01T00:00:00+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"radio_browser","entry_id":"d4f70a48f4e7745c14723a98409b5d79","minor_version":1,"modified_at":"1970-01-01T00:00:00+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Radio Browser","unique_id":null,"version":1},
+      {"created_at":"1970-01-01T00:00:00+00:00","data":{"language":"en","tld":"com"},"disabled_by":null,"discovery_keys":{},"domain":"google_translate","entry_id":"80d0d80bc234821217c316ae2554490d","minor_version":1,"modified_at":"1970-01-01T00:00:00+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Google Translate text-to-speech","unique_id":null,"version":1},
+      {"created_at":"2025-02-27T17:10:50.884818+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"go2rtc","entry_id":"01JN467F84F25ESYKV9K0EFXXG","minor_version":1,"modified_at":"2025-02-27T17:10:50.884826+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"system","title":"go2rtc","unique_id":null,"version":1},
+      {"created_at":"2025-02-27T17:21:34.138499+00:00","data":{"imei":"2b95000080893990","phone_number":"0523527200","token":"6df8bb6cd5214750a3729047838f3a89"},"disabled_by":null,"discovery_keys":{},"domain":"electrasmart","entry_id":"01JN46V3DTG1WJRBV8H4KA875K","minor_version":1,"modified_at":"2025-02-27T17:21:34.138530+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"user","title":"0523527200","unique_id":"0523527200","version":1},
+      {"created_at":"2025-02-27T17:35:42.267004+00:00","data":{"base_url":"https://euiot.roborock.com","user_data":{"avatarurl":"https://cdn.awsde0.fds.api.mi-img.com/resources/avatar/5b5885365133c8c03b95ee8feae0c3a5/2a6fd1a57a2d4c05b3808d66c6d17d81.jpg","country":"IL","countrycode":"972","nickname":"אביאור פרץ","region":"eu","rriot":{"h":"iV7U6PQuMu","k":"43F6s8NB","r":{"a":"https://api-eu.roborock.com","l":"https://wood-eu.roborock.com","m":"ssl://mqtt-eu-2.roborock.com:8883","r":"EU"},"s":"gPdUe1","u":"6230h0b0MSl3yFivy05lQZ"},"rruid":"rr646a50db87d820","token":"c8af8d1d8cf047fca6879436bc0e9156-CY+sV20ags4CZT3XK2amfw==","tokentype":"","tuyaDeviceState":0,"uid":6567843},"username":"abiozpp@gmail.com"},"disabled_by":null,"discovery_keys":{},"domain":"roborock","entry_id":"01JN47MZNTQNKZ4F6CDBDWH2Y5","minor_version":1,"modified_at":"2025-02-27T17:35:42.267018+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"user","title":"abiozpp@gmail.com","unique_id":"abiozpp@gmail.com","version":1}
     ]
   }
 }

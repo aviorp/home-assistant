@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "minor_version": 3,
+  "minor_version": 8,
   "key": "core.area_registry",
   "data": {
     "areas": [
@@ -8,19 +8,40 @@
         "aliases": [],
         "name": "סלון",
         "id": "slvn",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "modified_at": "1970-01-01T00:00:00+00:00",
+        "humidity_entity_id": null,
+        "temperature_entity_id": null
       },
       {
         "aliases": [],
         "name": "מטבח",
         "id": "mtbkh",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "modified_at": "1970-01-01T00:00:00+00:00",
+        "humidity_entity_id": null,
+        "temperature_entity_id": null
       },
       {
         "aliases": [],
         "name": "חדר שינה",
         "id": "khdr_shynh",
-        "picture": null
+        "picture": null,
+        "icon": null,
+        "floor_id": null,
+        "labels": [],
+        "created_at": "1970-01-01T00:00:00+00:00",
+        "modified_at": "1970-01-01T00:00:00+00:00",
+        "humidity_entity_id": null,
+        "temperature_entity_id": null
       }
     ]
   }

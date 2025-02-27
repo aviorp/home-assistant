@@ -1,59 +1,13 @@
 {
   "version": 1,
-  "minor_version": 4,
+  "minor_version": 8,
   "key": "core.device_registry",
   "data": {
     "devices": [
-      {
-        "area_id": null,
-        "config_entries": [
-          "36f5bc796fd6ec9698f7e81c2beb5e0c"
-        ],
-        "configuration_url": null,
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": "service",
-        "hw_version": null,
-        "id": "e29d5ad09b03c2c8254a238f997e728a",
-        "identifiers": [
-          [
-            "sun",
-            "36f5bc796fd6ec9698f7e81c2beb5e0c"
-          ]
-        ],
-        "manufacturer": null,
-        "model": null,
-        "name_by_user": null,
-        "name": "Sun",
-        "serial_number": null,
-        "sw_version": null,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "785a3a983b1b0c72d130d64f61d5b77e"
-        ],
-        "configuration_url": "https://www.met.no/en",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": "service",
-        "hw_version": null,
-        "id": "e0f80fbfc05e51642c0f98363c579209",
-        "identifiers": [
-          [
-            "met",
-            "785a3a983b1b0c72d130d64f61d5b77e"
-          ]
-        ],
-        "manufacturer": "Met.no",
-        "model": "Forecast",
-        "name_by_user": null,
-        "name": "Forecast",
-        "serial_number": null,
-        "sw_version": null,
-        "via_device_id": null
-      }
+      {"area_id":null,"config_entries":["36f5bc796fd6ec9698f7e81c2beb5e0c"],"configuration_url":null,"connections":[],"created_at":"1970-01-01T00:00:00+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"e29d5ad09b03c2c8254a238f997e728a","identifiers":[["sun","36f5bc796fd6ec9698f7e81c2beb5e0c"]],"labels":[],"manufacturer":null,"model":null,"model_id":null,"modified_at":"2025-02-27T17:10:50.450632+00:00","name_by_user":null,"name":"Sun","primary_config_entry":"36f5bc796fd6ec9698f7e81c2beb5e0c","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["785a3a983b1b0c72d130d64f61d5b77e"],"configuration_url":"https://www.met.no/en","connections":[],"created_at":"1970-01-01T00:00:00+00:00","disabled_by":null,"entry_type":"service","hw_version":null,"id":"e0f80fbfc05e51642c0f98363c579209","identifiers":[["met","785a3a983b1b0c72d130d64f61d5b77e"]],"labels":[],"manufacturer":"Met.no","model":"Forecast","model_id":null,"modified_at":"2025-02-27T17:10:50.722481+00:00","name_by_user":null,"name":"Forecast","primary_config_entry":"785a3a983b1b0c72d130d64f61d5b77e","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["01JN46V3DTG1WJRBV8H4KA875K"],"configuration_url":null,"connections":[],"created_at":"2025-02-27T17:21:34.766682+00:00","disabled_by":null,"entry_type":null,"hw_version":null,"id":"cc68b13b3ee14c7a15e1ab1ee6fd9cbe","identifiers":[["electrasmart","A810871866D7"]],"labels":[],"manufacturer":"מיני מרכזי","model":null,"model_id":null,"modified_at":"2025-02-27T17:21:34.766764+00:00","name_by_user":null,"name":"מאזגן ","primary_config_entry":"01JN46V3DTG1WJRBV8H4KA875K","serial_number":null,"sw_version":null,"via_device_id":null},
+      {"area_id":null,"config_entries":["01JN47MZNTQNKZ4F6CDBDWH2Y5"],"configuration_url":null,"connections":[["mac","b0:4a:39:7f:76:e4"]],"created_at":"2025-02-27T17:35:44.020729+00:00","disabled_by":null,"entry_type":null,"hw_version":null,"id":"69829b4909a7de150bd6b16c82821105","identifiers":[["roborock","3anbOa1GQ6DQ6Kt5eGeDSS"]],"labels":[],"manufacturer":"Roborock","model":"roborock.vacuum.a104","model_id":"roborock.vacuum.a104","modified_at":"2025-02-27T17:35:44.020987+00:00","name_by_user":null,"name":"Roborock Qrevo S","primary_config_entry":"01JN47MZNTQNKZ4F6CDBDWH2Y5","serial_number":null,"sw_version":"02.06.42","via_device_id":null}
     ],
     "deleted_devices": []
   }

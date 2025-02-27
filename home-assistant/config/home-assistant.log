@@ -1,1 +1,30 @@
-2024-01-03 01:31:00.441 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-02-27 19:10:49.082 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
+2025-02-27 19:10:50.887 WARNING (Recorder) [homeassistant.components.recorder.migration] The database is about to upgrade from schema version 42 to 48
+2025-02-27 19:10:50.887 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 43
+2025-02-27 19:10:50.887 WARNING (Recorder) [homeassistant.components.recorder.migration] Adding columns last_reported_ts to table states. Note: this may take several minutes on large databases and slow machines. Please be patient!
+2025-02-27 19:10:50.920 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 43 done
+2025-02-27 19:10:50.920 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 44
+2025-02-27 19:10:50.922 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 44 done
+2025-02-27 19:10:50.922 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 45
+2025-02-27 19:10:50.922 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 45 done
+2025-02-27 19:10:50.923 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 46
+2025-02-27 19:10:50.923 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 46 done
+2025-02-27 19:10:50.924 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 47
+2025-02-27 19:10:50.925 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 47 done
+2025-02-27 19:10:50.925 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrading recorder db schema to version 48
+2025-02-27 19:10:50.930 WARNING (Recorder) [homeassistant.components.recorder.migration] Upgrade to version 48 done
+2025-02-27 19:10:50.934 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=18 from 2024-01-02 23:31:00.409392)
+2025-02-27 19:11:31.680 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.65.1 (192.168.65.1). Requested URL: '/auth/login_flow/02f93942c4e3dff2666338b01c030c9b'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36)
+2025-02-27 19:12:50.870 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.65.1 (192.168.65.1). Requested URL: '/auth/login_flow/02f93942c4e3dff2666338b01c030c9b'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36)
+2025-02-27 19:13:01.912 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.65.1 (192.168.65.1). Requested URL: '/auth/login_flow/02f93942c4e3dff2666338b01c030c9b'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36)
+2025-02-27 19:18:30.094 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 192.168.65.1 (192.168.65.1). Requested URL: '/auth/login_flow/0d8f599fa989de870466dc3dbbbf2322'. (Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36)
+2025-02-27 19:21:34.766 WARNING (MainThread) [homeassistant.components.electrasmart.climate] Electra AC None (A810871866D7) is not available, check its status in the Electra Smart mobile app
+2025-02-27 19:37:10.731 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:37:10.869 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:42:16.604 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:42:25.934 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:42:26.339 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:42:26.475 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:43:14.841 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:43:16.078 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
+2025-02-27 19:43:16.225 WARNING (Thread-2 (_thread_main)) [roborock.version_1_apis.roborock_mqtt_client_v1] [Roborock Qrevo S] Unknown data protocol 128, please create an issue on the python-roborock repository
